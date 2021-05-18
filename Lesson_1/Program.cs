@@ -13,7 +13,7 @@ namespace LNix1
             Console.WriteLine(asm_user.FullName);
             Type[] types = asm_user.GetTypes();
 
-            foreach(Type t in types)
+            foreach (Type t in types)
             {
                 Console.WriteLine("Type: {0}", t.Name);
             }
@@ -33,40 +33,8 @@ namespace LNix1
             }
             Console.WriteLine("---------");
 
-            
-
-
-            //Type ttype = Type.GetType("LNix1.User", false, true);
-            //foreach (MemberInfo memberInfo in ttype.GetMembers())
-            //{
-            //    Console.WriteLine($"{ memberInfo.DeclaringType} \t{memberInfo.MemberType} \t{memberInfo.Name} ");
-            //}
-            //Console.WriteLine("");
-
-
-            //Type type = typeof(User);
-            //Console.WriteLine(type.ToString());
-
-            //User user = new User("Test", 20);
-            //Console.WriteLine(user);
 
         }
     }
-
-    //public class User
-    //{
-    //    public string Name { get; set; }
-    //    public int Age { get; set; }
-    //    public User(string name, int age)
-    //    {
-    //        Name = name;
-    //        Age = age;
-    //    }
-
-    //    public override string ToString()
-    //    {
-    //        return ($"Name: { Name} \tAge: { Age}");
-    //    }
-    //}
 
 }
