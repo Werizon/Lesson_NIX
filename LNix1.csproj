@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibrary2LNix1">
+      <HintPath>..\ClassLibrary2LNix1\bin\Debug\netcoreapp3.1\ClassLibrary2LNix1.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibraryLNix_1">
+      <HintPath>..\ClassLibraryLNix_1\bin\Debug\netcoreapp3.1\ClassLibraryLNix_1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
