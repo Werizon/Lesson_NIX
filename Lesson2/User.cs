@@ -24,5 +24,10 @@ namespace Lesson_NIX_2.Lesson2
             Role = role;
         }
 
+        public void AddUser()
+        {
+
+        }
+
     }
 }

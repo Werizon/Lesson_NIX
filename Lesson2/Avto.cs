@@ -28,6 +28,10 @@ namespace Lesson_NIX_2.Lesson2
             Price = price;
         }
 
+        public void AddAvto()
+        {
+
+        }
 
     }
 }
