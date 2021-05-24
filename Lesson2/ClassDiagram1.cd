@@ -3,28 +3,28 @@
   <Class Name="Lesson_NIX_2.Lesson2.Avto">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAECAAAAAUAAAAAAAAEBCAAAAAAAAAAAAAgAgAABAAA=</HashCode>
+      <HashCode>AAACAAAAAWAAAAAAAAEBAAAAAAIAAAAAAAgAgAABAAA=</HashCode>
       <FileName>Lesson2\Avto.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.Lesson2.Cart">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAIAABACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAABACAA=</HashCode>
       <FileName>Lesson2\Cart.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.Lesson2.Order">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAQAAAAAAAAAAAAwAQAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAwAAAAAAAAAAAAIAAAAAAA=</HashCode>
       <FileName>Lesson2\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.Lesson2.User">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAECAAAAACAAAAAAEAAASAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAACAAAAAAEAAAQAQABAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Lesson2\User.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -32,7 +32,7 @@
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAA=</HashCode>
-      <FileName>Lesson2\Services.cs</FileName>
+      <FileName>Lesson2\Service.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

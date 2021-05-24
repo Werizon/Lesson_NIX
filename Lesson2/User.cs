@@ -12,8 +12,8 @@ namespace Lesson_NIX_2.Lesson2
         public int PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Role { get; set; }
-        public ICollection<Order> Orders { get; set; }
-        public ICollection<Cart> Carts { get; set; }
+        //public ICollection<Order> Orders { get; set; }
+        //public ICollection<Cart> Carts { get; set; }
 
         public User(string name, string surname, int phoneNumber, string email, string role)
         {

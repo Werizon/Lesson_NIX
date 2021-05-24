@@ -11,7 +11,7 @@ namespace Lesson_NIX_2.Lesson2
         public int UserOrderId { get; set; }
         public string StatusCart { get; set; }
 
-        public Avto avto { get; set; }
-        public Order Order { get; set; }
+        //public Avto avto { get; set; }
+        //public Order Order { get; set; }
     }
 }

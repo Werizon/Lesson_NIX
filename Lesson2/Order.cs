@@ -10,8 +10,8 @@ namespace Lesson_NIX_2.Lesson2
         public int UserId { get; set; }
         public int Count { get; set; }
         public float Price { get; set; }
-        public User User { get; set; }
-        public Avto avto { get; set; }
+        //public User User { get; set; }
+        //public Avto avto { get; set; }
 
         public Order(int count, float price)
         {

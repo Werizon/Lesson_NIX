@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Lesson_NIX_2.Lesson2
 {
-    class Services
+    class Service
     {
+        
         public void preOrder()
         {
 
