@@ -11,12 +11,29 @@ namespace Lesson_NIX_2.hometask
     }
     abstract class Person
     {
-        //Абстрактный класс, являющийся базовым для классов Sallerи Klient.
-        public int Id;
+
+        //Абстрактный класс, являющийся базовым для классов Admin и Client.
+        public static int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
-        public int PhoneNumber { get; set; }
-        StatusRole Role;
+        public string PhoneNumber { get; set; }
+
+        protected StatusRole Role { get; set; }
+
+        public Person(string name, string surname, int age, string phoneNumber)
+        {
+            Id++;
+            Name = name;
+            Surname = surname;
+            Age = age;
+            PhoneNumber = phoneNumber;
+        }
+
+        public virtual void UserInfo()
+        {
+            Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} \tPhone: { PhoneNumber} \tRole:{ Role}");
+        }
+
     }
 }

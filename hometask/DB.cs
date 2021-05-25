@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask
 {
-    interface TransportRequirements
+    class DB
     {
 
     }
