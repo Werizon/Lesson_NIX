@@ -30,5 +30,15 @@ namespace Lesson_NIX_2.hometask
         {
             servicDB.buy.Add(new Order(client, car, admin, DateTime.Now));
         }
+
+        public void ViewOrders()
+        {
+
+            foreach (var obj in servicDB.buy)
+            {
+                Console.WriteLine($"Client: {obj.client.Name} \tAdmin: {obj.admin.Name} \tCar: {obj.car.Brand} {obj.car.Model} \tDate: {obj.dateTime}");
+            }
+        }
+
     }
 }

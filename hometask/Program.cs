@@ -20,7 +20,7 @@ namespace Lesson_NIX_2.hometask
 
 
             admin.UserInfo();
-            admin.ViewZakaz();
+        //    admin.ViewZakaz();
             
             client.UserInfo();
             client.DiscountInfo();
@@ -30,10 +30,10 @@ namespace Lesson_NIX_2.hometask
 
             services.Buy(client, nissan, admin);
 
-            Services.ViewAuto();
-            admin.ViewAuto();
-
             nissan.AutoInfo();
+
+            admin.ViewOrders();
+            services.ViewOrders();
         }
     }
 }
