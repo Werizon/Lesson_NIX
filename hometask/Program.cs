@@ -14,6 +14,10 @@ namespace Lesson_NIX_2.hometask
             
             Admin admin = new Admin("Stepan", "Taraskin", 20, "380954856831", 473753); // (данные о админе)
             Client client = new Client("Roman", "Horniy", 19, "380954856831", 2); // (данные о клиенте)
+           
+            ServicDB servicDB = new ServicDB();
+            Services services = new Services(servicDB);
+
 
             admin.UserInfo();
             admin.ViewZakaz();
@@ -21,10 +25,11 @@ namespace Lesson_NIX_2.hometask
             client.UserInfo();
             client.DiscountInfo();
 
-            Services.TestDrive(nissan, 05.10, 2021);
-          //  client.TestDrive(nissan, 05.10,2021);
+            DateTime dt = new DateTime(2042, 12, 24, 18, 42, 0);
+            services.TestDrive(nissan, client, dt);
 
-            Services.ZakazAvto(nissan);
+            services.Buy(client, nissan, admin);
+
             Services.ViewAuto();
             admin.ViewAuto();
 

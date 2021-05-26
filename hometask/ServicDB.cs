@@ -8,11 +8,13 @@ namespace Lesson_NIX_2.hometask
     {
         public List<Order> services;
         public List<Order> preOrder;
+        public List<Order> buy;
 
         public ServicDB()
         {
             services = new List<Order>();
             preOrder = new List<Order>();
+            buy = new List<Order>();
         }       
 
     }

@@ -22,6 +22,14 @@ namespace Lesson_NIX_2.hometask
             this.dateTime = dateTime;
         }
 
+        public Order(Client client, PassagerCar car, Admin admin, DateTime dateTime )
+        {
+            this.client = client;
+            this.car = car;
+            this.admin = admin;
+            this.dateTime = dateTime;
+        }
+
 
         public void Buy(Client client, Admin admin, PassagerCar car)
         {

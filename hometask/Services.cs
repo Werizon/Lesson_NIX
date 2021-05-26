@@ -16,15 +16,19 @@ namespace Lesson_NIX_2.hometask
         //    ServicDB servic = new ServicDB();
         }
 
-        public void Test_Drive(PassagerCar car, Client client, DateTime dateTime) 
+        public void TestDrive(PassagerCar car, Client client, DateTime dateTime) 
         {
-            
-            servicDB.services.Add(new Order(car, client, dateTime.Date)); 
+            servicDB.services.Add(new Order(car, client, dateTime)); 
         }
 
         public void PreOrder(PassagerCar car, Client client, DateTime dateTime) 
         {
             servicDB.preOrder.Add(new Order(car, client, dateTime.Date));
+        }
+
+        public void Buy(Client client, PassagerCar car, Admin admin)
+        {
+            servicDB.buy.Add(new Order(client, car, admin, DateTime.Now));
         }
     }
 }

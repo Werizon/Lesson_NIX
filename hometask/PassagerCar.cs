@@ -20,7 +20,8 @@ namespace Lesson_NIX_2.hometask
 
         public override void AutoInfo()
         {
-            
+            Console.WriteLine($"Brand: { Brand} \tModel: { Model} \tColor: { Color} \tYear: {ReleasyYear} " +
+                $"\tPrice: {Price} \tMax speed: {MaxSpeed}");
         }
     }
 }
