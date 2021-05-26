@@ -8,6 +8,7 @@ namespace Lesson_NIX_2.hometask
     {
         //Абстрактный класс с основными свойствами и методами, необходимыми для работы с товаром
         public static int Id = 0;
+        public int NumbId { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Body { get; set; }
@@ -26,6 +27,7 @@ namespace Lesson_NIX_2.hometask
             double vEngine, string typeFuel, string typeDrive, string desc)
         {
             Id++;
+            NumbId = Id;
             Brand = brand;
             Model = model;
             Body = body;

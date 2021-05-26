@@ -6,16 +6,18 @@ namespace Lesson_NIX_2.hometask
 {
     class ServicDB
     {
-        public List<Order> services;
+        public List<Order> testDrive;
         public List<Order> preOrder;
         public List<Order> buy;
+        public List<Order> cars;
         private static ServicDB Db;
 
         private ServicDB()
         {
-            services = new List<Order>();
+            testDrive = new List<Order>();
             preOrder = new List<Order>();
             buy = new List<Order>();
+            cars = new List<Order>();
         }
 
         public static ServicDB GetServicDB()

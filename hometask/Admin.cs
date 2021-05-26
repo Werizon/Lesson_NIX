@@ -17,7 +17,7 @@ namespace Lesson_NIX_2.hometask
             IdEmpl = idEmpl;
             Role = StatusRole.Admin;
             servicDb = ServicDB.GetServicDB();
-         }
+        }
 
 
         public override void UserInfo()
@@ -31,17 +31,26 @@ namespace Lesson_NIX_2.hometask
 
             foreach(var obj in servicDb.buy)
             {
-                Console.WriteLine($"Client: {obj.client.Name} \tAdmin: {obj.admin.Name} \tCar: {obj.car.Brand} {obj.car.Model} \tDate: {obj.dateTime}"  );
+                Console.WriteLine("\nПросмотр всех заказов:");
+                Console.WriteLine($"Client: {obj.client.Name} \tAdmin: {obj.admin.Name} " +
+                    $"\tCar: {obj.car.Brand} {obj.car.Model} \tDate: {obj.dateTime}"  );
             }
         }
 
         public void ViewOrder(int id)
         {
+            Console.WriteLine("\nПросмотр заказа конкретного пользователя:");
             var res = servicDb.buy.Where(p => p.client.PasportId == id);
             foreach(var r in res)
-                    Console.WriteLine($"Client: {r.client.Name} - id: {r.client.PasportId} \tAdmin: {r.admin.Name} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime} \tSumma: {r.car.Price}");
-       
+                    Console.WriteLine($"Client: {r.client.Name} - id: {r.client.PasportId} " +
+                        $"\tAdmin: {r.admin.Name} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime} \tSumma: {r.car.Price}");
         }
 
+        public void ViewTestDrives()
+        {
+            Console.WriteLine("\nПросмотр всех записей на тест драйв:");
+            foreach (var r in servicDb.testDrive)
+                Console.WriteLine($"Client: {r.client.Name} - {r.client.PhoneNumber} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime}");
+        }
     }
 }

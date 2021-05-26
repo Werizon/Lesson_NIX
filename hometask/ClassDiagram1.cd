@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Lesson_NIX_2.hometask.PassagerCar">
-    <Position X="4" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>hometask\PassagerCar.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Lesson_NIX_2.hometask.Client">
     <Position X="9.75" Y="4" Width="1.5" />
     <TypeIdentifier>
@@ -17,43 +10,50 @@
   <Class Name="Lesson_NIX_2.hometask.Person">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAEEAAQAQABAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAEEAASAQABAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>hometask\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.hometask.Services">
     <Position X="8" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAEAEAACAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>hometask\Services.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.hometask.TransportDrawing">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAACAAYAAQAgAAAAAAAFACAAAAAAAAAAAQgAkAABAAA=</HashCode>
+      <HashCode>CAACAAYAAQAgAAAAAAAFBCAAAAAAAAAAAQgAkAABAAA=</HashCode>
       <FileName>hometask\TransportDrawing.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.hometask.Admin">
     <Position X="11.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAASAAAQAAAAAAAAAAAAAAAAAAAABAAAAAAAACAAAA=</HashCode>
       <FileName>hometask\Admin.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.hometask.Order">
     <Position X="5.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAICRAABAAAAAAAAAAAAAAAABAEAAAAAAAAABIAAAAA=</HashCode>
+      <HashCode>AAACBAAAAAAAAAAAAAAAAAAABAEAAAAAAAAABAAAAAA=</HashCode>
       <FileName>hometask\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lesson_NIX_2.hometask.ServicDB">
     <Position X="8" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAAAAgAAEAIAAAAAAAAAAAAAAEAAAIAAAAA=</HashCode>
       <FileName>hometask\ServicDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lesson_NIX_2.hometask.PassagerCar">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAACCAAABAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>hometask\PassagerCar.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
