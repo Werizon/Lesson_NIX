@@ -14,6 +14,7 @@ namespace Lesson_NIX_2.hometask
 
         //Абстрактный класс, являющийся базовым для классов Admin и Client.
         public static int Id { get; set; }
+        public int PasportId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
@@ -28,6 +29,7 @@ namespace Lesson_NIX_2.hometask
             Surname = surname;
             Age = age;
             PhoneNumber = phoneNumber;
+            PasportId = Id;
         }
 
         public virtual void UserInfo()

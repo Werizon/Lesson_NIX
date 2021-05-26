@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lesson_NIX_2.hometask
@@ -8,14 +9,14 @@ namespace Lesson_NIX_2.hometask
     {
         //Класс админ, содержащий информацию о админе
         public int IdEmpl { get; set; }
-        public ServicDB servicDB;
+        public ServicDB servicDb;
 
-        public Admin(string name, string surname, int age, string phoneNumber, int idEmpl /* ServicDb*/)
+        public Admin(string name, string surname, int age, string phoneNumber, int idEmpl)
            : base(name, surname, age, phoneNumber)
         {
             IdEmpl = idEmpl;
             Role = StatusRole.Admin;
-            // ServicDb
+            servicDb = ServicDB.GetServicDB();
          }
 
 
@@ -28,7 +29,7 @@ namespace Lesson_NIX_2.hometask
         public void ViewOrders()
         {
 
-            foreach(var obj in servicDB.buy)
+            foreach(var obj in servicDb.buy)
             {
                 Console.WriteLine($"Client: {obj.client.Name} \tAdmin: {obj.admin.Name} \tCar: {obj.car.Brand} {obj.car.Model} \tDate: {obj.dateTime}"  );
             }
@@ -36,7 +37,10 @@ namespace Lesson_NIX_2.hometask
 
         public void ViewOrder(int id)
         {
-
+            var res = servicDb.buy.Where(p => p.client.PasportId == id);
+            foreach(var r in res)
+                    Console.WriteLine($"Client: {r.client.Name} - id: {r.client.PasportId} \tAdmin: {r.admin.Name} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime} \tSumma: {r.car.Price}");
+       
         }
 
     }
