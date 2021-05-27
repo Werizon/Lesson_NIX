@@ -30,7 +30,6 @@ namespace Lesson_NIX_2.hometask
 
             DateTime dt = new DateTime(2042, 12, 24, 18, 42, 0);
             services.TestDrive(nissanNX3, client1, dt); // запись на тест-драйв
-            // просмотр записей на тест-драйв
 
             services.Buy(client1, nissanNX3, admin1);
 
