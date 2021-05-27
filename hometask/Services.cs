@@ -32,12 +32,12 @@ namespace Lesson_NIX_2.hometask
 
         public void AddUserToList (Client client)
         {
-            servicDB.clients.Add(new Order(client));
+            servicDB.clients.Add(client);
         }
 
         public void AddUserToList(Admin admin)
         {
-            servicDB.admins.Add(new Order(admin));
+            servicDB.admins.Add(admin);
         }
 
         public void ViewUsers()
@@ -45,9 +45,9 @@ namespace Lesson_NIX_2.hometask
             Console.WriteLine("..................");
             Console.WriteLine("Пользователи: ");
             foreach (var r in servicDB.admins)
-                Console.WriteLine($"\nName: { r.admin.Name} \t Age: { r.admin.Age} \tRole:{ r.admin.Role} \tNumber admin: { r.admin.IdEmpl} ");
+                Console.WriteLine($"\nName: { r.Name} \t Age: { r.Age} \tRole:{ r.Role} \tNumber admin: { r.IdEmpl} ");
             foreach (var r in servicDB.clients)
-                Console.WriteLine($"Name: { r.client.Name} \t Age: { r.client.Age} \tRole: { r.client.Role} ");
+                Console.WriteLine($"Name: { r.Name} \t Age: { r.Age} \tRole: { r.Role} ");
             Console.WriteLine("...............................");
         }
 
@@ -58,7 +58,7 @@ namespace Lesson_NIX_2.hometask
         //PassagerCar car;
         public void AddAutoToList(PassagerCar car)
         {
-                servicDB.cars.Add(new Order(car));
+                servicDB.cars.Add(car);
         }
 
         public void ViewAvtos()
@@ -66,9 +66,9 @@ namespace Lesson_NIX_2.hometask
             Console.WriteLine("...............................");
             Console.WriteLine("Автомобили в наличие: ");
             foreach (var r in servicDB.cars)
-                Console.WriteLine($"\nBrand: { r.car.Brand} \tModel: { r.car.Model} " +
-                    $"\tYear: { r.car.ReleasyYear} \tColor:{ r.car.Color} " +
-                    $"\tMax speed { r.car.MaxSpeed} \tPrice: { r.car.Price}$ \tDesc: { r.car.Description}");
+                Console.WriteLine($"\nBrand: { r.Brand} \tModel: { r.Model} " +
+                    $"\tYear: { r.ReleasyYear} \tColor:{ r.Color} " +
+                    $"\tMax speed { r.MaxSpeed} \tPrice: { r.Price}$ \tDesc: { r.Description}");
             Console.WriteLine("...............................");
         }
 

@@ -16,8 +16,7 @@ namespace Lesson_NIX_2.hometask
             discount = disc;
             Role = StatusRole.Client;
         }
-
-
+ 
         public void DiscountInfo()
         {
             Console.WriteLine($"Песональная скидка: {discount}%");

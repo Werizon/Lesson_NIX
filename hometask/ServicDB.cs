@@ -9,9 +9,9 @@ namespace Lesson_NIX_2.hometask
         public List<Order> testDrive;
         public List<Order> preOrder;
         public List<Order> buy;
-        public List<Order> cars;
-        public List<Order> clients;
-        public List<Order> admins;
+        public List<PassagerCar> cars;
+        public List<Client> clients;
+        public List<Admin> admins;
         private static ServicDB Db;
 
 
@@ -20,9 +20,9 @@ namespace Lesson_NIX_2.hometask
             testDrive = new List<Order>();
             preOrder = new List<Order>();
             buy = new List<Order>();
-            cars = new List<Order>();
-            clients = new List<Order>();
-            admins = new List<Order>();
+            cars = new List<PassagerCar>();
+            clients = new List<Client>();
+            admins = new List<Admin>();
         }
 
         public static ServicDB GetServicDB()

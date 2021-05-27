@@ -12,21 +12,6 @@ namespace Lesson_NIX_2.hometask
         public Admin admin;
         public PassagerCar car;
 
-        public Order(PassagerCar car)
-        {
-            this.car = car;
-        }
-
-        public Order(Admin admin)
-        {
-            this.admin = admin;
-        }
-
-        public Order(Client client)
-        {
-            this.client = client;
-        }
-
         public Order(PassagerCar car, Client client, DateTime dateTime)
         {
             this.client = client;
