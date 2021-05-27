@@ -36,6 +36,5 @@ namespace Lesson_NIX_2.hometask
             Console.WriteLine("Информация про пользователя");
             Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} \tPhone: { PhoneNumber} \tRole:{ Role}");
         }
-
     }
 }
