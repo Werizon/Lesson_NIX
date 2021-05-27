@@ -32,31 +32,24 @@ namespace Lesson_NIX_2.hometask
 
         public void AddUserToList (Client client)
         {
-            servicDB.clients.Add(client);
+            servicDB.users.Add(client);
         }
 
         public void AddUserToList(Admin admin)
         {
-            servicDB.admins.Add(admin);
+            servicDB.users.Add(admin);
         }
 
         public void ViewUsers()
         {
             Console.WriteLine("..................");
             Console.WriteLine("Пользователи: ");
-            foreach (var r in servicDB.admins)
-                Console.WriteLine($"\nName: { r.Name} \t Age: { r.Age} \tRole:{ r.Role} \tNumber admin: { r.IdEmpl} ");
-            foreach (var r in servicDB.clients)
-                Console.WriteLine($"Name: { r.Name} \t Age: { r.Age} \tRole: { r.Role} ");
+            foreach (var r in servicDB.users)
+                Console.WriteLine($"\nName: { r.Name} \t Age: { r.Age} \tRole:{ r.Role} ");
             Console.WriteLine("...............................");
         }
 
-        //public Services(PassagerCar car)
-        //{
-        //    this.car = car;
-        //}
-        //PassagerCar car;
-        public void AddAutoToList(PassagerCar car)
+         public void AddAutoToList(PassagerCar car)
         {
                 servicDB.cars.Add(car);
         }
