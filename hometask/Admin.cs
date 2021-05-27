@@ -22,8 +22,9 @@ namespace Lesson_NIX_2.hometask
 
         public override void UserInfo()
         {
+            Console.WriteLine("Информация про пользователя (админ)");
             Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} " +
-                $"\tPhone: { PhoneNumber} \tRole:{ Role} \tNumber Empl: {IdEmpl}");
+                $"\tPhone: { PhoneNumber} \tRole:{ Role} \tNumber Empl: { IdEmpl}");
         }
 
         public void ViewOrders()
@@ -32,8 +33,8 @@ namespace Lesson_NIX_2.hometask
             foreach(var obj in servicDb.buy)
             {
                 Console.WriteLine("\nПросмотр всех заказов:");
-                Console.WriteLine($"Client: {obj.client.Name} \tAdmin: {obj.admin.Name} " +
-                    $"\tCar: {obj.car.Brand} {obj.car.Model} \tDate: {obj.dateTime}"  );
+                Console.WriteLine($"Client: { obj.client.Name} \tAdmin: { obj.admin.Name} " +
+                    $"\tCar: { obj.car.Brand} { obj.car.Model} \tDate: { obj.dateTime}"  );
             }
         }
 
@@ -42,15 +43,16 @@ namespace Lesson_NIX_2.hometask
             Console.WriteLine("\nПросмотр заказа конкретного пользователя:");
             var res = servicDb.buy.Where(p => p.client.PasportId == id);
             foreach(var r in res)
-                    Console.WriteLine($"Client: {r.client.Name} - id: {r.client.PasportId} " +
-                        $"\tAdmin: {r.admin.Name} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime} \tSumma: {r.car.Price}");
+                    Console.WriteLine($"Client: { r.client.Name} - id: { r.client.PasportId} " +
+                        $"\tAdmin: { r.admin.Name} \tCar:  { r.car.Brand} { r.car.Model} \tDate: { r.dateTime} \tSuma: { r.car.Price}$");
         }
 
         public void ViewTestDrives()
         {
             Console.WriteLine("\nПросмотр всех записей на тест драйв:");
             foreach (var r in servicDb.testDrive)
-                Console.WriteLine($"Client: {r.client.Name} - {r.client.PhoneNumber} \tCar: {r.car.Brand} {r.car.Model} \tDate: {r.dateTime}");
+                Console.WriteLine($"Client: { r.client.Name} - { r.client.PhoneNumber} " +
+                    $"\tCar: { r.car.Brand} { r.car.Model} \tDate: { r.dateTime}");
         }
     }
 }

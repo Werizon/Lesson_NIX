@@ -20,7 +20,7 @@ namespace Lesson_NIX_2.hometask
 
         public void DiscountInfo()
         {
-            Console.WriteLine($"Discount: {discount}");
+            Console.WriteLine($"Песональная скидка: {discount}%");
         }
     }
 

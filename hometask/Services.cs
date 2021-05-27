@@ -30,6 +30,26 @@ namespace Lesson_NIX_2.hometask
             servicDB.buy.Add(new Order(client, car, admin, DateTime.Now));
         }
 
+        public void AddUserToList (Client client)
+        {
+            servicDB.clients.Add(new Order(client));
+        }
+
+        public void AddUserToList(Admin admin)
+        {
+            servicDB.admins.Add(new Order(admin));
+        }
+
+        public void ViewUsers()
+        {
+            Console.WriteLine("..................");
+            Console.WriteLine("Пользователи: ");
+            foreach (var r in servicDB.admins)
+                Console.WriteLine($"\nName: { r.admin.Name} \t Age: { r.admin.Age} \tRole:{ r.admin.Role} \tNumber admin: { r.admin.IdEmpl} ");
+            foreach (var r in servicDB.clients)
+                Console.WriteLine($"Name: { r.client.Name} \t Age: { r.client.Age} \tRole: { r.client.Role} ");
+            Console.WriteLine("...............................");
+        }
 
         //public Services(PassagerCar car)
         //{
@@ -38,8 +58,6 @@ namespace Lesson_NIX_2.hometask
         //PassagerCar car;
         public void AddAutoToList(PassagerCar car)
         {
-
-                servicDB = ServicDB.GetServicDB();
                 servicDB.cars.Add(new Order(car));
         }
 
@@ -47,10 +65,10 @@ namespace Lesson_NIX_2.hometask
         {
             Console.WriteLine("...............................");
             Console.WriteLine("Автомобили в наличие: ");
-            foreach (var r in servicDB.cars.ToList())
-                Console.WriteLine($"\nBrand: {r.car.Brand} \tModel: {r.car.Model} " +
-                    $"\tYear: {r.car.ReleasyYear} \tColor:{r.car.Color} " +
-                    $"\tMax speed {r.car.MaxSpeed} \tPrice: {r.car.Price} \tDesc: {r.car.Description}");
+            foreach (var r in servicDB.cars)
+                Console.WriteLine($"\nBrand: { r.car.Brand} \tModel: { r.car.Model} " +
+                    $"\tYear: { r.car.ReleasyYear} \tColor:{ r.car.Color} " +
+                    $"\tMax speed { r.car.MaxSpeed} \tPrice: { r.car.Price}$ \tDesc: { r.car.Description}");
             Console.WriteLine("...............................");
         }
 

@@ -11,7 +11,6 @@ namespace Lesson_NIX_2.hometask
     }
     abstract class Person
     {
-
         //Абстрактный класс, являющийся базовым для классов Admin и Client.
         public static int Id { get; set; }
         public int PasportId { get; set; }
@@ -20,7 +19,7 @@ namespace Lesson_NIX_2.hometask
         public int Age { get; set; }
         public string PhoneNumber { get; set; }
 
-        protected StatusRole Role { get; set; }
+        public StatusRole Role { get; protected set; }
 
         public Person(string name, string surname, int age, string phoneNumber)
         {
@@ -34,6 +33,7 @@ namespace Lesson_NIX_2.hometask
 
         public virtual void UserInfo()
         {
+            Console.WriteLine("Информация про пользователя");
             Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} \tPhone: { PhoneNumber} \tRole:{ Role}");
         }
 

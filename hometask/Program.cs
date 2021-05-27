@@ -19,8 +19,15 @@ namespace Lesson_NIX_2.hometask
 
             Admin admin1 = new Admin("Stepan", "Taraskin", 20, "380954856831", 473753); // (данные о админе)
             Client client1 = new Client("Roman", "Horniy", 19, "380954856831", 2); // (данные о клиенте)
-           
-          
+
+
+            //добавление пользователя и админа в список
+
+
+            services.AddUserToList(client1);
+            services.AddUserToList(admin1);
+            services.ViewUsers();   //  просмотр всех пользователей
+
             admin1.UserInfo();  // просмотр инф об админе
 
             client1.UserInfo(); // просмотр инф об пользователе
