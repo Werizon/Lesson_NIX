@@ -21,7 +21,13 @@ namespace Lesson_NIX_2.hometask
         {
             Console.WriteLine($"Песональная скидка: {discount}%");
         }
+
+        public override void UserInfo()
+        {
+            Console.WriteLine("Информация про пользователя");
+            Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} " +
+                $"\tPhone: { PhoneNumber} \tRole:{ Role} \t { discount}");
+        }
+
     }
-
-
 }

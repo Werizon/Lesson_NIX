@@ -12,7 +12,7 @@ namespace Lesson_NIX_2.hometask
     abstract class Person
     {
         //Абстрактный класс, являющийся базовым для классов Admin и Client.
-        public static int Id { get; set; }
+        private static int Id { get; set; }
         public int PasportId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -31,11 +31,9 @@ namespace Lesson_NIX_2.hometask
             PasportId = Id;
         }
 
-        public virtual void UserInfo()
-        {
-            Console.WriteLine("Информация про пользователя");
-            Console.WriteLine($"Name: { Name} \tSurname: { Surname} \tAge: { Age} \tPhone: { PhoneNumber} \tRole:{ Role}");
-        }
+        public abstract void UserInfo();
+
+        public void ChangePassword() { }
 
     }
 }

@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask
 {
-    class DB
+    interface IEngine
     {
+        public string TypeEngine { get; set; }
+        public string TypeFuel { get; set; }
 
     }
 }

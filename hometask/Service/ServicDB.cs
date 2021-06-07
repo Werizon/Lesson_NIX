@@ -9,7 +9,7 @@ namespace Lesson_NIX_2.hometask
         public List<Order> testDrive;
         public List<Order> preOrder;
         public List<Order> buy;
-        public List<PassagerCar> cars;
+        public List<Auto> cars;
         public List<Person> users;
         private static ServicDB Db;
 
@@ -19,7 +19,7 @@ namespace Lesson_NIX_2.hometask
             testDrive = new List<Order>();
             preOrder = new List<Order>();
             buy = new List<Order>();
-            cars = new List<PassagerCar>();
+            cars = new List<Auto>();
             users = new List<Person>();
         }
 

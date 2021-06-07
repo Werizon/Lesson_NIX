@@ -8,6 +8,7 @@ namespace Lesson_NIX_2.hometask
     class Admin: Person
     {
         //Класс админ, содержащий информацию о админе
+
         public int IdEmpl { get; set; }
         public ServicDB servicDb;
 
