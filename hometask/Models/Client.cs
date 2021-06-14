@@ -4,12 +4,13 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask
 {
+    [Serializable]
     class Client : Person
     {
         //Класс клиент, содержащий информацию о клиенте
         public int discount { get; set; }
-        
 
+        public Client() { }
         public Client(string name, string surname, int age, string phoneNumber, int disc)
             : base(name, surname, age, phoneNumber)
         {

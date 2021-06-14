@@ -9,8 +9,10 @@ namespace Lesson_NIX_2.hometask
         Client,
         Admin
     }
+    [Serializable]
     abstract class Person
     {
+
         //Абстрактный класс, являющийся базовым для классов Admin и Client.
         private static int Id { get; set; }
         public int PasportId { get; set; }
@@ -19,7 +21,9 @@ namespace Lesson_NIX_2.hometask
         public int Age { get; set; }
         public string PhoneNumber { get; set; }
 
-        public StatusRole Role { get; protected set; }
+        public StatusRole Role { get; set; }
+
+        public Person() { }
 
         public Person(string name, string surname, int age, string phoneNumber)
         {
