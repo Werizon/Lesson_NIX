@@ -59,7 +59,7 @@ namespace Lesson_NIX_2.hometask
             try
             {
                 SaveData();
-                List<Client> clients = GetAutorsList(); 
+                List<Client> clients = GetClientsList(); 
             }
             catch (Exception ex)
             {
@@ -83,12 +83,12 @@ namespace Lesson_NIX_2.hometask
             xmlFormatA.Serialize(fStreamA, clients);
 
         }
-        public static List<Client> GetAutorsList()
+        public static List<Client> GetClientsList()
         {
             using Stream fStream = new FileStream("Autors.xml", FileMode.Open, FileAccess.Read, FileShare.None);
             XmlSerializer xmlFormat = new XmlSerializer(typeof(List<Client>));
-            List<Client> autors = (List<Client>)xmlFormat.Deserialize(fStream);
-            return autors;
+            List<Client> clients = (List<Client>)xmlFormat.Deserialize(fStream);
+            return clients;
         }
 
     }
