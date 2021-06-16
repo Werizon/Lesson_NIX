@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask
 {
-    enum StatusRole
+    public enum StatusRole
     {
         Client,
         Admin
     }
     [Serializable]
-    abstract class Person
+    public abstract class Person
     {
 
         //Абстрактный класс, являющийся базовым для классов Admin и Client.

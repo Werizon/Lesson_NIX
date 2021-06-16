@@ -4,10 +4,15 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask
 {
-    interface IEngine
+    class Engine
     {
         public string TypeEngine { get; set; }
         public string TypeFuel { get; set; }
 
+        public Engine(string engine, string fuel)
+        {
+            TypeEngine = engine;
+            TypeFuel = fuel;
+        }
     }
 }

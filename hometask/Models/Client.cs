@@ -5,7 +5,7 @@ using System.Text;
 namespace Lesson_NIX_2.hometask
 {
     [Serializable]
-    class Client : Person
+    public class Client : Person
     {
         //Класс клиент, содержащий информацию о клиенте
         public int discount { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lesson_NIX_2.hometask.Models
 {
-    class JeepCar : Auto, IAutoPass, IEngine
+    class JeepCar : Auto, IAutoPass
     {
         public string Body { get; set; }
         public string Color { get; set; }
@@ -16,9 +16,10 @@ namespace Lesson_NIX_2.hometask.Models
         public string Complect {get; set;}
         public string Description { get; set; }
         public double FuelConsumption { get; set; }
+        Engine Engine { get; set; }
 
         public JeepCar(string brand, string model, string body, string color, int year, int price,
-           int maxSpeed, string typeDrive, string desc, double fuelConsump, string typeEngine, string typeFuel, string complect)
+           int maxSpeed, string typeDrive, string desc, double fuelConsump, Engine engine, string complect)
        : base(brand, model, price)
         {
             Body = body;
@@ -28,8 +29,7 @@ namespace Lesson_NIX_2.hometask.Models
             TypeDrive = typeDrive;
             Description = desc;
             TypeDrive = typeDrive;
-            TypeEngine = typeEngine;
-            TypeFuel = typeFuel;
+            Engine = engine;
             FuelConsumption = fuelConsump;
             Complect = complect;
         }

@@ -5,7 +5,7 @@ using System.Text;
 namespace Lesson_NIX_2.hometask
 {
 
-    class PassagerCar : Auto, IAutoPass, IEngine
+    class PassagerCar : Auto, IAutoPass
     {
         //Класс автомобиль, содержащий свойства автомобиля,
 
@@ -17,10 +17,11 @@ namespace Lesson_NIX_2.hometask
         public double FuelConsumption { get; set; }
         public string TypeEngine { get; set; }
         public string TypeFuel { get; set; }
+        Engine Engine { get; set; }
         
 
         public PassagerCar(string brand, string model, string body, string color, int year, int price, 
-            int maxSpeed, string desc, double fuelConsump, string typeEngine, string typeFuel)
+            int maxSpeed, string desc, double fuelConsump, Engine engine)
         : base(brand, model, price)
         {
             Body = body;
@@ -28,9 +29,9 @@ namespace Lesson_NIX_2.hometask
             ReleasyYear = year;
             MaxSpeed = maxSpeed;
             Description = desc;
-            TypeEngine = typeEngine;
-            TypeFuel = typeFuel;
+
             FuelConsumption = fuelConsump;
+            Engine = engine;
         }
 
         public override void AutoInfo()
