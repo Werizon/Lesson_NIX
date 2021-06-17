@@ -13,7 +13,7 @@ namespace Lesson_NIX_2.hometask.Models
         public int MaxSpeed { get; set; }
         public string TypeEngine { get; set; }
         public string TypeFuel { get; set; }
-        public string Complect {get; set;}
+        public string Complect { get; set; }
         public string Description { get; set; }
         public double FuelConsumption { get; set; }
         Engine Engine { get; set; }

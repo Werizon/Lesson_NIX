@@ -18,9 +18,9 @@ namespace Lesson_NIX_2.hometask
         public string TypeEngine { get; set; }
         public string TypeFuel { get; set; }
         Engine Engine { get; set; }
-        
 
-        public PassagerCar(string brand, string model, string body, string color, int year, int price, 
+
+        public PassagerCar(string brand, string model, string body, string color, int year, int price,
             int maxSpeed, string desc, double fuelConsump, Engine engine)
         : base(brand, model, price)
         {
